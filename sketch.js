@@ -56,7 +56,7 @@ function draw() {
   
     spawnBanana();
 
-    if (spawnBanana.isTouching(monkey)){
+    if (foodGroup.isTouching(monkey)){
       foodGroup.destroyEach();
       score = score+2;
     }
